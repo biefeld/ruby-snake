@@ -11,6 +11,8 @@ class Snake
         @positions.each do |position|
             Square.new(x: position[0]*GRID_SIZE, y:position[1]*GRID_SIZE, size: GRID_SIZE-1, color: $snake_color)
         end
+
+        Square.new(x: head[0]*GRID_SIZE, y:head[1]*GRID_SIZE, size: GRID_SIZE-1, color: $head_color)
     end
 
     #Remove last square of snake and then add a new one depending on the direction of movement

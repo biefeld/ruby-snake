@@ -1,13 +1,16 @@
 require 'ruby2D'
-require './word.rb'
-require './snake.rb'
-require './game.rb'
+require './lib/word.rb'
+require './lib/snake.rb'
+require './lib/game.rb'
 
 # Constant definitions
-$backg_color = "#99C1B9"
+$backg_color = "#a7eefa"
 $text_color = "#8E7DBE"
 $snake_color = "#D88C9A"
-$fruit_color = "#F2D0A9"
+$head_color = "#fa4163"
+$fruit_color = "#8fd88c"
+
+$font = './font/Comfortaa-Medium.ttf'
 
 set background: $backg_color
 set title: "Snake"
@@ -61,7 +64,8 @@ on :key_down do |event|
             snake.direction = event.key
         end
     elsif event.key == 'r'
-        init_game
+        snake = Snake.new
+        game = Game.new
         $dead = false
         game_over_text.text = ""
         score_text.text = ""

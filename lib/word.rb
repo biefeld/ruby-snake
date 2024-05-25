@@ -8,6 +8,6 @@ class Word
     end
 
     def draw
-        Text.new(@text, x: @x, y: @y, color: $text_color, z: 5, font: 'Comfortaa-Medium.ttf', size: 30)
+        Text.new(@text, x: @x, y: @y, color: $text_color, z: 5, font: $font, size: 30)
     end
 end

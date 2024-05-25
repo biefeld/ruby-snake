@@ -11,7 +11,7 @@ class Game
             Circle.new(x: @fruit_x*GRID_SIZE + GRID_SIZE/2, y:@fruit_y*GRID_SIZE + GRID_SIZE/2, radius: GRID_SIZE/2, color: $fruit_color, z:5)
             # Square.new(x: @fruit_x*GRID_SIZE, y:@fruit_y*GRID_SIZE, size: GRID_SIZE, color: $fruit_color, z:5)
         end
-        Text.new("Score: #{@score}", x: 1, y: 1, color: $text_color, font: 'Comfortaa-Medium.ttf', size: 25)
+        Text.new("Score: #{@score}", x: 1, y: 1, color: $text_color, font: $font, size: 25)
     end
 
 
