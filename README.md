@@ -5,9 +5,17 @@ A simple Snake game written in Ruby, using the ruby2d gem.
 ![ruby-snake GIF Demo](img/demo.gif)
 
 
-# How to Use
+## How to Use
 
-First, ensure that Git and Ruby are installed on your machine. Next, run the following commands in your CLI of choice:
+### Prerequisites
+
+- Git
+- Ruby
+- Bundler gem, which can be installed using `gem install bundler`
+
+### Installation
+
+To make a copy of the project, execute the following commands in your terminal of choice:
 
 ```bash
 # Clone repo
@@ -20,14 +28,11 @@ cd ruby-snake
 bundle install
 ```
 
-Finally, to start up the game, use the following command:
+### Running
 
-```bash
-# Start the game
-ruby ruby-snake.rb
-```
+To run up the game, use the `ruby ruby-snake.rb` command.
 
-# Controls
+### Controls
 
 - `Arrow Keys` control the snake.
 - `r` will restart the game.
